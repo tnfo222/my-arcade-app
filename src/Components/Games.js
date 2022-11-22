@@ -11,21 +11,42 @@ export default function Games () {
             <h1> AATT Arcade </h1>
             <div className="wrapper">
             <Row xs={2} md={3} className="g-4">
-                {Array.from({ length: 3 }).map((_, idx) => (
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="" />
+                        <Card.Body>
+                            <Card.Title>TicTacToe</Card.Title>
+                            <Card.Text>
+                                Simple game of X's and O's!
+                            </Card.Text>
+                            <Button variant="primary">Play</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="" />
+                        <Card.Body>
+                            <Card.Title>Hangman</Card.Title>
+                            <Card.Text>
+                                Guess the word or phrase to save this man!
+                            </Card.Text>
+                            <Button variant="primary">Play</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="" />
+                        <Card.Body>
+                            <Card.Title>Frogger</Card.Title>
+                            <Card.Text>
+                                Help Frogger get across safely!
+                            </Card.Text>
+                            <Button variant="primary">Play</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
             </Row>
             </div>
         </div>
