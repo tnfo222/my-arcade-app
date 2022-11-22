@@ -14,7 +14,7 @@ export default function Games () {
                 {Array.from({ length: 3 }).map((_, idx) => (
                     <Col>
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="../arcade.png" />
+                            <Card.Img variant="top" src="" />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
