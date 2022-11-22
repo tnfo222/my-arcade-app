@@ -4,9 +4,14 @@ import Card from 'react-bootstrap/Card';
 import '../App.css';
 //import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 //import Games from './Games';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function About () {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/games');
+    }
   return (
     <div>
         <Card>
@@ -21,7 +26,7 @@ export default function About () {
                 We hope you enjoy our app!!
                 </Card.Text>
             </div>
-            <Button variant="primary">Get Gaming</Button>
+            <Button variant="primary" onClick={handleClick}>Get Gaming</Button>
         </Card.Body>
         </Card>
     </div>
