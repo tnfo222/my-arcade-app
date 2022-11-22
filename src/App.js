@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 
-import Home from './Components/Home';
 import About from './Components/About';
 import Store from './Components/Store';
 import Games from './Components/Games';
@@ -20,7 +19,7 @@ function App() {
       <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand as={Link} to="/">Arcade</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/games">ATT App Arcade</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -50,7 +49,6 @@ function App() {
       </>
       <div>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/store" element={<Store/>}></Route>
           <Route path="/games" element={<Games/>}></Route>
