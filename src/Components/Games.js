@@ -8,9 +8,14 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Games () {
     const navigate = useNavigate();
+    const navigate2 = useNavigate();
     const handleClick1 = () => {
         navigate('/tictactoe');
     }
+    const handleClick2 = () => {
+        navigate2('/hangman');
+    }
+
     return(
         <div>
             <h1> AATT Arcade </h1>
@@ -49,6 +54,18 @@ export default function Games () {
                                 Help Frogger get across safely!
                             </Card.Text>
                             <Button variant="primary">Play</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="https://media3.giphy.com/media/12BJdh2M9SwciQ/200.webp?cid=ecf05e47wthokm9x506c8z5eyizrygb5j10sp72ai0bwpw8e&rid=200.webp&ct=g" />
+                        <Card.Body>
+                            <Card.Title>Hangman</Card.Title>
+                            <Card.Text>
+                                Guess the word in time!
+                            </Card.Text>
+                            <Button variant="primary" onClick={handleClick2}>Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>

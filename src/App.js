@@ -12,6 +12,7 @@ import Games from './Components/Games';
 import Login from './Components/LogIn';
 import Profile from './Components/Profile';
 import TicTacToe from './Components/TicTacToe/TicTacToe';
+import Hangman from './Components/Hangman/Hangman';
 import Register from './Components/Register';
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
                 <NavDropdown.Item as={Link} to="/tictactoe">TicTacToe</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/hangman">
                   Hangman
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/tetris">
+                  Tetris
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/frogger">Frogger</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -58,6 +62,7 @@ function App() {
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
           <Route path="/tictactoe" element={<TicTacToe/>}></Route>
+          <Route path="/hangman" element={<Hangman/>}></Route>
         </Routes>
       </div>
     </div>
