@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Register (props) {
     const [email, setEmail] = useState('');
@@ -12,6 +13,12 @@ export default function Register (props) {
         e.preventDefault();
         console.log(email);
     }
+
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/login');
+    }
+
     return(
         <div className="auth-form-container">
         <Form className="registerform" onSubmit={handleSubmit}>
@@ -33,7 +40,7 @@ export default function Register (props) {
                 <Form.Label>Password</Form.Label>
                 <Form.Control id="password" placeholder="New Password" value={pass} onChange={(e) => setPass(e.target.value)} name="password"/>
             </Form.Group>
-            <Button variant="primary" type="submit" >
+            <Button className="link-btn" type="submit" onClick={handleClick}>
                 Submit
             </Button>
         </Form>

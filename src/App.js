@@ -10,6 +10,7 @@ import About from './Components/About';
 import Store from './Components/Store';
 import Games from './Components/Games';
 import Login from './Components/LogIn';
+import Profile from './Components/Profile';
 import TicTacToe from './Components/TicTacToe/TicTacToe';
 import Register from './Components/Register';
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="/games" element={<Games/>}></Route>
           <Route path="/register" element={<Register/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
+          <Route path="/profile" element={<Profile/>}></Route>
           <Route path="/tictactoe" element={<TicTacToe/>}></Route>
         </Routes>
       </div>

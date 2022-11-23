@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login (props) {
     const [email, setEmail] = useState("");
@@ -11,6 +12,12 @@ export default function Login (props) {
         e.preventDefault();
         console.log(email);
     }
+
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/profile');
+    }
+
     return(
         <div className="auth-form-container">
             <Form className="loginform" onSubmit={handleSubmit}>
@@ -26,7 +33,7 @@ export default function Login (props) {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Remember Me" />
                 </Form.Group>
-                <Button className="link-btn" type="submit">
+                <Button className="link-btn" type="submit" onClick={handleClick}>
                     Submit
                 </Button>
             </Form>
