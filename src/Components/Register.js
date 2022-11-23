@@ -5,9 +5,9 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
 export default function Register (props) {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-    const [name] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -25,11 +25,11 @@ export default function Register (props) {
             <h2>Sign Up for Arcade</h2>
             <Form.Group className="mb-3" controlId="formName">
                 <Form.Label>Full Name</Form.Label>
-                <Form.Control value={name} name="name" id="name" placeholder="Full Name"/>
+                <Form.Control value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" placeholder="Full Name"/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Enter email" value={email}/>
+                <Form.Control id="email" name="email" onChange={(e) => setEmail(e.target.value)} placeholder="Enter email" value={email}/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formUserName">
                 <Form.Label>Username</Form.Label>

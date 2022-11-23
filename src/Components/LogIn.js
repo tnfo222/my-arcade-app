@@ -3,15 +3,32 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-export default function Login (props) {
+async function loginUser(credentials) {
+    return fetch('http://localhost:8000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    })
+      .then(data => data.json())
+   }
+
+
+export default function Login ({setToken}) {
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async e => {
         e.preventDefault();
-        console.log(email);
-    }
+        const token = await loginUser({
+          email,
+          pass
+        });
+        setToken(token);
+      }
 
     const navigate = useNavigate();
     const handleClick = () => {
@@ -40,3 +57,7 @@ export default function Login (props) {
         </div>
     )
 }
+
+Login.propTypes = {
+    setToken: PropTypes.func.isRequired
+  };

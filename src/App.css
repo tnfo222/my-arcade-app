@@ -61,6 +61,11 @@
   background-image: linear-gradient(79deg, #d1d153, #ee7cee, 48%, #499edf);
 }
 
+.profile {
+  height: vh-100;
+  background-image: linear-gradient(79deg, #d1d153, #ee7cee, 48%, #499edf);
+}
+
 .registerform {
   text-align: center;
   display: flex;
