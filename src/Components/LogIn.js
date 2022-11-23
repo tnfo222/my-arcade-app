@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
 
-export default function LogIn (props) {
+export default function Login (props) {
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
 
@@ -12,9 +12,9 @@ export default function LogIn (props) {
         console.log(email);
     }
     return(
-        <div className="wrapper">
-            <h1>Welcome Back, Gamer :D</h1>
-            <Form onSubmit={handleSubmit}>
+        <div className="auth-form-container">
+            <Form className="loginform" onSubmit={handleSubmit}>
+            <h2>Welcome Back, Gamer :D</h2>
                 <Form.Group className="mb-3" controlId="formUserName">
                     <Form.Label>Email</Form.Label>
                     <Form.Control value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" id="email" name="email"/>
@@ -26,7 +26,7 @@ export default function LogIn (props) {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Remember Me" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className="link-btn" type="submit">
                     Submit
                 </Button>
             </Form>
