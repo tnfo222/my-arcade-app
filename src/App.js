@@ -9,8 +9,9 @@ import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import About from './Components/About';
 import Store from './Components/Store';
 import Games from './Components/Games';
-import LogIn from './Components/LogIn';
-import SignUp from './Components/SignUp';
+import Login from './Components/LogIn';
+import TicTacToe from './Components/TicTacToe/TicTacToe';
+import Register from './Components/Register';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
             </Nav>
             <Nav>
               <Nav.Link as={Link} to="/login">Log In</Nav.Link>
-              <Nav.Link eventKey={2} as={Link} to="/signup">
+              <Nav.Link eventKey={2} as={Link} to="/register">
                 Sign Up
               </Nav.Link>
             </Nav>
@@ -52,8 +53,9 @@ function App() {
           <Route path="/about" element={<About/>}></Route>
           <Route path="/store" element={<Store/>}></Route>
           <Route path="/games" element={<Games/>}></Route>
-          <Route path="/signup" element={<SignUp/>}></Route>
-          <Route path="/login" element={<LogIn/>}></Route>
+          <Route path="/register" element={<Register/>}></Route>
+          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/tictactoe" element={<TicTacToe/>}></Route>
         </Routes>
       </div>
     </div>
