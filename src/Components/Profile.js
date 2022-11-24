@@ -18,33 +18,33 @@ function Profile() {
                                         <h4 class="mb-4 mt-0">Contact detail</h4>
 
                                         <div class="col-md-6">
-                                            <label class="form-label">First Name *</label>
-                                            <input type="text" class="form-control" placeholder="" aria-label="First name" value="Scaralet"/>
+                                            <label class="form-label"></label>
+                                            <input type="text" class="form-control" placeholder="First Name *" aria-label="First name" value=""/>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label class="form-label">Last Name *</label>
-                                            <input type="text" class="form-control" placeholder="" aria-label="Last name" value="Doe"/>
+                                            <label class="form-label"></label>
+                                            <input type="text" class="form-control" placeholder="Last Name *" aria-label="Last name" value=""/>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label class="form-label">Phone number *</label>
-                                            <input type="text" class="form-control" placeholder="" aria-label="Phone number" value="(333) 000 555"/>
+                                            <label class="form-label"></label>
+                                            <input type="text" class="form-control" placeholder="User Name *" aria-label="User Name" value=""/>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label class="form-label">Mobile number *</label>
-                                            <input type="text" class="form-control" placeholder="" aria-label="Phone number" value="+91 9852 8855 252"/>
+                                            <label class="form-label"></label>
+                                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone number" value=""/>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label for="inputEmail4" class="form-label">Email *</label>
-                                            <input type="email" class="form-control" id="inputEmail4" value="example@homerealty.com"/>
+                                            <label for="inputEmail4" class="form-label"></label>
+                                            <input type="email" placeholder= "Email *" class="form-control" id="inputEmail4" value=""/>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label class="form-label">Skype *</label>
-                                            <input type="text" class="form-control" placeholder="" aria-label="Phone number" value="Scaralet D"/>
+                                            <label class="form-label"></label>
+                                            <input type="text" class="form-control" placeholder="Skype User" aria-label="Phone number" value=""/>
                                         </div>
                                     </div>
                                 </div>
