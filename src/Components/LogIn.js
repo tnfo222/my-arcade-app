@@ -5,30 +5,9 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-async function loginUser(credentials) {
-    return fetch('http://localhost:8000/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(credentials)
-    })
-      .then(data => data.json())
-   }
-
-
-export default function Login ({setToken}) {
+export default function Login () {
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
-
-    const handleSubmit = async e => {
-        e.preventDefault();
-        const token = await loginUser({
-          email,
-          pass
-        });
-        setToken(token);
-      }
 
     const navigate = useNavigate();
     const handleClick = () => {
@@ -37,7 +16,7 @@ export default function Login ({setToken}) {
 
     return(
         <div className="auth-form-container">
-            <Form className="loginform" onSubmit={handleSubmit}>
+            <Form className="loginform">
             <h2>Welcome Back, Gamer :D</h2>
                 <Form.Group className="mb-3" controlId="formUserName">
                     <Form.Label>Email</Form.Label>

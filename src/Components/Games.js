@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Games () {
     const navigate = useNavigate();
     const navigate2 = useNavigate();
+
     const handleClick1 = () => {
         navigate('/tictactoe');
     }
