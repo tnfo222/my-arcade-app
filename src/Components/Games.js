@@ -32,7 +32,7 @@ export default function Games () {
                             <Card.Text>
                                 Simple game of X's and O's!
                             </Card.Text>
-                            <Button variant="primary" onClick={handleClick1} >Play</Button>
+                            <Button className="link-btn1" onClick={handleClick1} >Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -44,7 +44,7 @@ export default function Games () {
                             <Card.Text>
                                 The original block game!
                             </Card.Text>
-                            <Button variant="primary" onClick={handleClick3}>Play</Button>
+                            <Button className="link-btn1" onClick={handleClick3}>Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -56,7 +56,7 @@ export default function Games () {
                             <Card.Text>
                                 Frogger Coming Soon!
                             </Card.Text>
-                            <Button variant="primary">Play</Button>
+                            <Button className="link-btn1">Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -68,7 +68,7 @@ export default function Games () {
                             <Card.Text>
                                 Guess the word in time!
                             </Card.Text>
-                            <Button variant="primary" onClick={handleClick2}>Play</Button>
+                            <Button className="link-btn1" onClick={handleClick2}>Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -80,7 +80,7 @@ export default function Games () {
                             <Card.Text>
                                 Brewing you up something fun!
                             </Card.Text>
-                            <Button variant="primary">Play</Button>
+                            <Button className="link-btn1">Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -92,7 +92,7 @@ export default function Games () {
                             <Card.Text>
                                 More games cookin'!
                             </Card.Text>
-                            <Button variant="primary">Play</Button>
+                            <Button className="link-btn1">Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>
