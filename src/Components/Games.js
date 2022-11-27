@@ -54,7 +54,7 @@ export default function Games () {
                         <Card.Body>
                             <Card.Title>Frogger</Card.Title>
                             <Card.Text>
-                                Help Frogger get across safely!
+                                Frogger Coming Soon!
                             </Card.Text>
                             <Button variant="primary">Play</Button>
                         </Card.Body>
@@ -69,6 +69,30 @@ export default function Games () {
                                 Guess the word in time!
                             </Card.Text>
                             <Button variant="primary" onClick={handleClick2}>Play</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="https://media2.giphy.com/media/3oz8xFA1SJJZd8Bkly/200.webp?cid=ecf05e4763r4nxv48ewvs8sgtlondkj3js4g2mn8i7p1g0p4&rid=200.webp&ct=g" />
+                        <Card.Body>
+                            <Card.Title>Coming Soon</Card.Title>
+                            <Card.Text>
+                                Brewing you up something fun!
+                            </Card.Text>
+                            <Button variant="primary">Play</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="https://media2.giphy.com/media/O5hoOqZtdwzoQ/200.webp?cid=ecf05e4734l2n8uj9kyz1rl5xrxwjf4jx46lf2s8tqt8biow&rid=200.webp&ct=g" />
+                        <Card.Body>
+                            <Card.Title>Coming Soon</Card.Title>
+                            <Card.Text>
+                                More games cookin'!
+                            </Card.Text>
+                            <Button variant="primary">Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>

@@ -34,7 +34,7 @@ export default function Login () {
         if (response.status === 200) {
             setCurrentUser(data.user)
             localStorage.setItem('token', data.token)
-            navigate(`/`)
+            navigate(`/profile`)
         } else {
             setErrorMessage(data.message)
         }

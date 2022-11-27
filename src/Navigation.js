@@ -18,6 +18,7 @@ function Navigation() {
             <Nav.Link eventKey={2} as={Link} to="/register">
                 Sign Up
             </Nav.Link>
+            <Nav.Link as={Link} to="/profile">My Profile</Nav.Link>
         </Nav>
     )
 

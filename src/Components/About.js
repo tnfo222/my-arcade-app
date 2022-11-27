@@ -13,11 +13,13 @@ export default function About () {
         navigate('/games');
     }
   return (
-    <div>
+    <div className="wrapper">
         <Card>
-        <Card.Header as="h5">About the Founders</Card.Header>
+        <Card.Header as="h5" >About the Founders</Card.Header>
         <Card.Body>
-            <Card.Title>Hey Gamers :D</Card.Title>
+            <div className="title">
+            <Card.Title>Hey Gamers :D,</Card.Title>
+            </div>
             <div className="about">
                 <Card.Text>
                 This app was designed by people like you! 
@@ -26,7 +28,7 @@ export default function About () {
                 We hope you enjoy our app!!
                 </Card.Text>
             </div>
-            <Button variant="primary" onClick={handleClick}>Get Gaming</Button>
+            <Button className="link-btn1" onClick={handleClick}>Get Gaming</Button>
         </Card.Body>
         </Card>
     </div>
