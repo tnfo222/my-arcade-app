@@ -1,71 +1,35 @@
-# Getting Started with Create React App
+# Final Project--Game App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our final project is a collaboration between Taylor Forbes, Thyra Barreto, Aaron Boone, and Ashley Beal.
+## Our Inspiration
 
-## Available Scripts
+Our inspiration for this project came from our collective love of web/computer games and gaming.  This is the best of our favorite retro and classic games.  We hope you enjoy our app!!
 
-In the project directory, you can run:
 
-### `npm start`
+## More About Our App and How to Navigate
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Our application is a multi-facted game application that is designed specifically to cater to everyone's nostalgic game memories.  Everyone has that classic/retro game that they remember fondly and always love to re-visit.  Right on cue, introduce our web application--the place to go to re-visit your favorite childhood games...all in one place!!  Simply pick your game of choice from our main page and play to your hearts content.
+## Our Page Routes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Method        | Path                           | Purpose                                          |
+| :------------ | :--------------------------    | :----------------------------------------------- |        
+| GET           | /                              | Home Page                                        |
+| GET           | /home                          | Home Page index page/nav                         |
+| GET           | /about                         | Link to about us page                            |
+| GET           | /profile                       | Link to user profile page                        |
+| GET           | /store                         | Link to our Store page                           |
+| GET           | /tictactoe                     | Link to our Tic-Tac-Toe game page                |
+| GET           | /hangman                       | Link to our Hangman game page                    |
+| GET           | /frogger                       | Link to our Frogger game page                    |
+| POST          | /login                         | User login page                                  |
+| GET           | /signup                        | Page for creating a new user profile             | 
+| GET           | *                              | 404 page (matches any route not defined above)   |
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## More About this website application...
+This web application was built using React, Node, Mongo DB
+## Functionality Issues/Bugs/Addressing Anything Unfinished:
+![This is an image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6umsqQkLMdf5QxPkIGR0dH_wegJVc0o-xog&usqp=CAU)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# my-arcade-app
+We were not able to fully finish developing our store page or add as many games as we would have liked, but we are overall happy with what we have accomplished as a team.
