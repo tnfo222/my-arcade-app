@@ -9,6 +9,7 @@ import Login from './Components/LogIn';
 import Profile from './Components/Profile';
 import TicTacToe from './Components/TicTacToe/TicTacToe';
 import Hangman from './Components/Hangman/Hangman';
+import Tetris from './Components/Tetris/src/app.js';
 import Register from './Components/Register';
 import Navigation from './Navigation'; 
 import CurrentUserProvider from './contexts/CurrentUser';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/profile" element={<Profile/>}></Route>
           <Route path="/tictactoe" element={<TicTacToe/>}></Route>
           <Route path="/hangman" element={<Hangman/>}></Route>
+          <Route path="/tetris" element={<Tetris/>}></Route>
         </Routes>
       </BrowserRouter>
   </CurrentUserProvider>  

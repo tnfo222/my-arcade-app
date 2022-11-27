@@ -8,13 +8,15 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Games () {
     const navigate = useNavigate();
-    const navigate2 = useNavigate();
 
     const handleClick1 = () => {
         navigate('/tictactoe');
     }
     const handleClick2 = () => {
-        navigate2('/hangman');
+        navigate('/hangman');
+    }
+    const handleClick3 = () => {
+        navigate('/tetris');
     }
 
     return(
@@ -42,7 +44,7 @@ export default function Games () {
                             <Card.Text>
                                 The original block game!
                             </Card.Text>
-                            <Button variant="primary">Play</Button>
+                            <Button variant="primary" onClick={handleClick3}>Play</Button>
                         </Card.Body>
                     </Card>
                 </Col>

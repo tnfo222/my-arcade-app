@@ -1,0 +1,64 @@
+/*  Source Code/Resource: https://tiny-tetris.stackblitz.io  */
+
+body {
+  font: 14px 'Century Gothic', Futura, sans-serif;
+  margin: 0px;
+}
+
+.t-row {
+  display: flex;
+}
+
+.t-board {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid grey;
+}
+
+.t-cell {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  color: grey;
+}
+
+.t-cell-0 {
+  background-color: rgb(49, 47, 47);
+}
+
+.t-cell-1 {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,125,230,1) 35%, rgba(5,36,42,1) 100%);
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.t-cell-2 {
+  background-color: green;
+}
+
+.t-cell-3 {
+  background-color: red;
+}
+
+.t-score-label {
+  font-weight: bold;
+}
+
+.t-score-label {
+  font-weight: bold;
+}
+
+.t-parent {
+  display: flex;
+}
+
+element.style {
+  width: 44px;
+  left: 0px;
+}
+
