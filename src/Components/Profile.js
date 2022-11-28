@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
 function Profile() {
@@ -19,32 +20,32 @@ function Profile() {
 
                                         <div class="col-md-6">
                                             <label class="form-label"></label>
-                                            <input type="text" class="form-control" placeholder="First Name *" aria-label="First name" value=""/>
+                                            <input type="text" class="form-control" placeholder="First Name *" aria-label="First name"/>
                                         </div>
 
                                         <div class="col-md-6">
                                             <label class="form-label"></label>
-                                            <input type="text" class="form-control" placeholder="Last Name *" aria-label="Last name" value=""/>
+                                            <input type="text" class="form-control" placeholder="Last Name *" aria-label="Last name"/>
                                         </div>
 
                                         <div class="col-md-6">
                                             <label class="form-label"></label>
-                                            <input type="text" class="form-control" placeholder="User Name *" aria-label="User Name" value=""/>
+                                            <input type="text" class="form-control" placeholder="User Name *" aria-label="User Name"/>
                                         </div>
 
                                         <div class="col-md-6">
                                             <label class="form-label"></label>
-                                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone number" value=""/>
+                                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone number"/>
                                         </div>
 
                                         <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label"></label>
-                                            <input type="email" placeholder= "Email *" class="form-control" id="inputEmail4" value=""/>
+                                            <input type="email" placeholder= "Email *" class="form-control" id="inputEmail4"/>
                                         </div>
 
                                         <div class="col-md-6">
                                             <label class="form-label"></label>
-                                            <input type="text" class="form-control" placeholder="Skype User" aria-label="Phone number" value=""/>
+                                            <input type="text" class="form-control" placeholder="Skype User" aria-label="Skype Profile"/>
                                         </div>
                                     </div>
                                 </div>
