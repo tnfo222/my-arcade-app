@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
+import Home from './Components/Home';
 import About from './Components/About';
 import Store from './Components/Store';
 import Games from './Components/Games';
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/store" element={<Store/>}></Route>
           <Route path="/games" element={<Games/>}></Route>
