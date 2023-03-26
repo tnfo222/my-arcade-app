@@ -1,6 +1,8 @@
 # Final Project--Game App
 
-Our final project is a collaboration between Taylor Forbes, Thyra Barreto, Aaron Boone, and Ashley Beal.
+Our final project is a collaboration between Taylor Forbes, Thyra Barreto, Aaron Boone, and Ashley Beal. 
+Backend is located here --> https://github.com/tnfo222/arcade-app-backend 
+
 ## Our Inspiration
 
 Our inspiration for this project came from our collective love of web/computer games and gaming.  This is the best of our favorite retro and classic games.  We hope you enjoy our app!!
